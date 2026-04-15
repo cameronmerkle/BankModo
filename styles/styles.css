@@ -347,6 +347,11 @@ main .section.dark-blue {
   color: #fff;
 }
 
+/* Hero banner section needs no padding so image is edge-to-edge */
+main .section.dark-blue.hero-banner-container {
+  padding: 0;
+}
+
 main .section.dark-blue h1,
 main .section.dark-blue h2,
 main .section.dark-blue h3,

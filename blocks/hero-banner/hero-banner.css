@@ -1,4 +1,11 @@
 /* Hero Banner - Wintrust dark blue hero with background image */
+
+/* Remove section padding/margin so image fills edge-to-edge */
+.hero-banner-container {
+  margin: 0;
+  padding: 0;
+}
+
 .hero-banner-container .hero-banner-wrapper {
   max-width: unset;
   padding: 0;
@@ -100,6 +107,11 @@
   .hero-banner {
     padding: 80px 32px;
     min-height: 420px;
+  }
+
+  /* Push text content to the right half on desktop */
+  .hero-banner > div:last-child > div {
+    margin-left: 50%;
   }
 
   .hero-banner h1 {
