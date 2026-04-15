@@ -87,25 +87,24 @@
   line-height: 1.4;
 }
 
-/* Card-style columns (Earn $300 / Earn $500) with shadow and OR divider */
-.columns-split.columns-split-2-cols > div > div {
+/* === Bonus-style columns with card shadows === */
+.columns-split-bonus > div > div:not(.columns-split-or) {
   background-color: var(--background-color);
   box-shadow: var(--shadow-card);
   padding: var(--spacing-l);
   border-radius: var(--border-radius-card);
-  position: relative;
 }
 
-/* OR divider between the two columns on mobile */
-.columns-split.columns-split-2-cols > div > div:first-child::after {
-  content: "OR";
-  display: block;
-  text-align: center;
+/* OR divider */
+.columns-split-or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--heading-font-family);
   font-weight: 700;
   font-size: var(--body-font-size-m);
   color: var(--text-color);
-  margin-top: var(--spacing-m);
+  flex-shrink: 0;
 }
 
 /* CTA link inside columns */
@@ -146,19 +145,12 @@
     font-size: var(--heading-font-size-xxl);
   }
 
-  /* OR divider between columns on desktop - positioned in the gap */
-  .columns-split.columns-split-2-cols > div > div:first-child::after {
-    position: absolute;
-    right: calc(-1 * var(--spacing-xl) / 2 - 10px);
-    top: 50%;
-    transform: translateY(-50%);
-    margin-top: 0;
+  .columns-split-or {
     font-size: var(--heading-font-size-m);
   }
 
-  /* Ensure proper gap for OR text */
-  .columns-split.columns-split-2-cols > div {
-    gap: 60px;
+  .columns-split-bonus > div {
+    gap: var(--spacing-l);
   }
 }
 
@@ -177,10 +169,4 @@
 
 .dark-blue .columns-split a.button:any-link:hover {
   background-color: rgb(255 255 255 / 15%);
-}
-
-/* Dark section columns should not have card shadow */
-.dark-blue .columns-split.columns-split-2-cols > div > div {
-  box-shadow: none;
-  background-color: transparent;
 }
