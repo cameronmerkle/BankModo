@@ -154,7 +154,8 @@
     font-size: var(--heading-font-size-xxl);
   }
 
-  .columns-split-or {
+  .columns-split > div > .columns-split-or {
+    flex: 0 0 40px;
     font-size: var(--heading-font-size-m);
   }
 }
