@@ -135,6 +135,10 @@
     gap: var(--spacing-xl);
   }
 
+  .columns-split-bonus > div {
+    gap: var(--spacing-l);
+  }
+
   .columns-split > div > div {
     flex: 1;
     order: unset;
@@ -142,10 +146,6 @@
 
   .columns-split h2 {
     font-size: var(--heading-font-size-xxl);
-  }
-
-  .columns-split-bonus > div {
-    gap: var(--spacing-l);
   }
 
   .columns-split-or {
