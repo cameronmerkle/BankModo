@@ -87,9 +87,8 @@
   font-weight: 700;
   font-size: var(--body-font-size-m);
   color: var(--text-color);
-  flex-shrink: 0;
-  width: 40px;
-  min-width: 40px;
+  flex: 0 0 40px;
+  padding: var(--spacing-s) 0;
 }
 
 /* === Section-level styling (heading + button wrappers) === */
