@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-checking",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-04-15T20:31:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.wintrust.com/personal-solutions/bank-with-us/checking/better-checking.html",
+    "originPage": "checking account product page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "product-comparison",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + description + features + requirements + CTA",
+    "buttonCount": 3,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product comparison pages",
+      "pricing tier displays",
+      "banking product listings"
+    ],
+    "notSuitableFor": [
+      "image-heavy card grids",
+      "blog article listings"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/personal-solutions/bank-with-us/checking/better-checking"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-15T20:31:00.000Z"
+  }
+}

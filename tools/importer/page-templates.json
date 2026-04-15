@@ -1,0 +1,82 @@
+{
+  "templates": [
+    {
+      "name": "checking-product",
+      "urls": [
+        "https://www.wintrust.com/personal-solutions/bank-with-us/checking/better-checking.html"
+      ],
+      "description": "Banking checking account product page with features, benefits, and account details",
+      "blocks": [
+        {
+          "name": "hero-banner",
+          "instances": ["#cmp-wintrustgrid-656750079"]
+        },
+        {
+          "name": "cards-checking",
+          "instances": ["#cmp-wintrustgrid--1529320396 .cmp-wintrustgridcolumn--4"]
+        },
+        {
+          "name": "columns-split",
+          "instances": [
+            "#cmp-wintrustgrid-1618508014 .cmp-wintrustgridcolumn--5",
+            "#cmp-wintrustgrid--463868300 .cmp-wintrustgridcolumn--6",
+            "#cmp-wintrustgrid-391309266 > .cmp-wintrustgridcolumn:nth-child(2)"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Banner",
+          "selector": "#cmp-wintrustgrid-656750079",
+          "style": "dark-blue",
+          "blocks": ["hero-banner"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Checking Account Comparison",
+          "selector": "#cmp-wintrustgrid--1529320396",
+          "style": null,
+          "blocks": ["cards-checking"],
+          "defaultContent": ["#cmp-wintrustgrid--1529320396 > .cmp-wintrustgridcolumn:first-child"]
+        },
+        {
+          "id": "section-3",
+          "name": "Cash Bonus Steps",
+          "selector": "#cmp-wintrustgrid-1618508014",
+          "style": null,
+          "blocks": ["columns-split"],
+          "defaultContent": [
+            "#cmp-wintrustgrid-1618508014 > .cmp-wintrustgridcolumn:first-child",
+            "#cmp-wintrustgrid-1618508014 > .cmp-wintrustgridcolumn:last-child .button"
+          ]
+        },
+        {
+          "id": "section-4",
+          "name": "Early Pay Feature",
+          "selector": "#cmp-wintrustgrid--463868300",
+          "style": "dark-blue",
+          "blocks": ["columns-split"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5",
+          "name": "Statement Savings",
+          "selector": "#cmp-wintrustgrid-391309266",
+          "style": null,
+          "blocks": ["columns-split"],
+          "defaultContent": ["#cmp-wintrustgrid-391309266 > .cmp-wintrustgridcolumn:first-child"]
+        },
+        {
+          "id": "section-6",
+          "name": "Disclosures",
+          "selector": ".disclosureText.parbase",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [".disclosureText.parbase"]
+        }
+      ]
+    }
+  ]
+}

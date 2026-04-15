@@ -1,0 +1,38 @@
+{
+  "variantName": "hero-banner",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-04-15T20:31:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.wintrust.com/personal-solutions/bank-with-us/checking/better-checking.html",
+    "originPage": "checking account product page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "product-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + subheading + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "banking product landing pages",
+      "promotional campaign pages",
+      "financial services hero sections"
+    ],
+    "notSuitableFor": [
+      "blog posts without images",
+      "text-only landing pages"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/personal-solutions/bank-with-us/checking/better-checking"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-15T20:31:00.000Z"
+  }
+}

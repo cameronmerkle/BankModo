@@ -1,0 +1,111 @@
+/* Columns Split - Flexible two-column layout for various content sections */
+.columns-split > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-l);
+}
+
+.columns-split > div > div {
+  order: 1;
+}
+
+.columns-split > div > .columns-split-img-col {
+  order: 0;
+}
+
+.columns-split img {
+  width: 100%;
+  display: block;
+  border-radius: var(--border-radius-card);
+}
+
+.columns-split h2 {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xl);
+  font-weight: 700;
+  color: var(--wintrust-blue);
+  margin: 0 0 var(--spacing-s);
+  line-height: 1.1;
+}
+
+.columns-split p {
+  font-size: var(--body-font-size-s);
+  line-height: 1.5;
+  margin: 0 0 var(--spacing-m);
+}
+
+.columns-split ol,
+.columns-split ul {
+  padding-left: 1.2em;
+  margin: var(--spacing-s) 0 var(--spacing-m);
+}
+
+.columns-split li {
+  font-size: var(--body-font-size-s);
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.columns-split a:any-link {
+  color: var(--link-color);
+}
+
+.columns-split a.button:any-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  color: #fff;
+  border: 2px solid var(--accent-color);
+  border-radius: var(--border-radius-button);
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: var(--body-font-size-s);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: var(--transition-base);
+}
+
+.columns-split a.button:any-link:hover {
+  background-color: var(--accent-hover-color);
+  border-color: var(--accent-hover-color);
+}
+
+/* Bonus steps cards with shadow */
+.columns-split > div > div:not(.columns-split-img-col) {
+  padding: var(--spacing-l);
+}
+
+@media (width >= 900px) {
+  .columns-split > div {
+    align-items: center;
+    flex-direction: row;
+    gap: var(--spacing-xl);
+  }
+
+  .columns-split > div > div {
+    flex: 1;
+    order: unset;
+  }
+
+  .columns-split h2 {
+    font-size: var(--heading-font-size-xxl);
+  }
+}
+
+/* Dark section variant - white text */
+.dark-blue .columns-split h2,
+.dark-blue .columns-split p,
+.dark-blue .columns-split li {
+  color: #fff;
+}
+
+.dark-blue .columns-split a.button:any-link {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.dark-blue .columns-split a.button:any-link:hover {
+  background-color: rgb(255 255 255 / 15%);
+}

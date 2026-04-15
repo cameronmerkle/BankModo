@@ -1,0 +1,38 @@
+{
+  "variantName": "columns-split",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-04-15T20:31:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.wintrust.com/personal-solutions/bank-with-us/checking/better-checking.html",
+    "originPage": "checking account product page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "content-split",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "text + image side by side",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "feature highlight sections",
+      "product detail split layouts",
+      "text with illustration sections"
+    ],
+    "notSuitableFor": [
+      "multi-column data grids",
+      "card-based layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/personal-solutions/bank-with-us/checking/better-checking"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-15T20:31:00.000Z"
+  }
+}
