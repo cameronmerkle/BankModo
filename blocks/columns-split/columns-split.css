@@ -88,11 +88,18 @@
   font-size: var(--body-font-size-m);
   color: var(--text-color);
   flex-shrink: 0;
+  width: 40px;
+  min-width: 40px;
 }
 
 /* === Section-level styling (heading + button wrappers) === */
 .columns-split-container > .default-content-wrapper {
   text-align: center;
+}
+
+/* Extra spacing above the button below the bonus cards */
+.columns-split-container > .columns-split-wrapper + .default-content-wrapper {
+  margin-top: var(--spacing-xl);
 }
 
 .columns-split-container > .default-content-wrapper h2 {
@@ -136,7 +143,7 @@
   }
 
   .columns-split-bonus > div {
-    gap: var(--spacing-l);
+    gap: var(--spacing-m);
   }
 
   .columns-split > div > div {
