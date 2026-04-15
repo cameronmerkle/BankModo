@@ -1,4 +1,18 @@
 /* Cards Checking - Three-column product comparison cards */
+
+/* Section heading: "Choose Your Checking Account" - centered and larger */
+.cards-checking-container .default-content-wrapper {
+  text-align: center;
+  margin-bottom: var(--spacing-l);
+}
+
+.cards-checking-container .default-content-wrapper h2 {
+  font-size: var(--heading-font-size-xxl);
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Card grid layout */
 .cards-checking > ul {
   list-style: none;
   margin: 0;
@@ -8,10 +22,12 @@
   gap: var(--spacing-l);
 }
 
+/* Individual cards with blue top tab */
 .cards-checking > ul > li {
   background-color: var(--background-color);
   box-shadow: var(--shadow-card);
   border-radius: var(--border-radius-card);
+  border-top: 5px solid var(--wintrust-blue);
   overflow: hidden;
   transition: var(--transition-base);
 }
@@ -20,10 +36,11 @@
   box-shadow: var(--shadow-card-hover);
 }
 
+/* Card header badge (blue background label) */
 .cards-checking .cards-checking-card-image {
   line-height: 0;
   background-color: var(--wintrust-blue);
-  padding: 12px 16px;
+  padding: 8px 16px;
   min-height: 8px;
 }
 
@@ -37,6 +54,7 @@
   margin: 0;
 }
 
+/* Card body content */
 .cards-checking .cards-checking-card-body {
   padding: 20px 24px 28px;
 }
@@ -71,6 +89,7 @@
   line-height: 1.4;
 }
 
+/* Card CTA button */
 .cards-checking .cards-checking-card-body a:any-link {
   display: inline-block;
   padding: 12px 24px;
