@@ -15,8 +15,8 @@ export default function decorate(block) {
     });
   });
 
-  // Add OR divider for bonus-style columns (2 cols, both with ordered lists, no images)
   if (cols.length === 2) {
+    // Add OR divider for bonus-style columns (2 cols, both with ordered lists, no images)
     const hasOl = cols.every((col) => col.querySelector('ol'));
     const hasImg = cols.some((col) => col.querySelector('picture'));
     if (hasOl && !hasImg) {
@@ -25,6 +25,14 @@ export default function decorate(block) {
       orDivider.className = 'columns-split-or';
       orDivider.textContent = 'OR';
       block.firstElementChild.insertBefore(orDivider, cols[1]);
+    }
+
+    // Detect savings-style columns (first col has only a heading, second has details + link)
+    const firstColChildren = cols[0].children;
+    const secondHasLink = cols[1].querySelector('a');
+    if (firstColChildren.length === 1 && firstColChildren[0].matches('h2, h3') && secondHasLink && !hasImg) {
+      block.classList.add('columns-split-savings');
+      cols[0].classList.add('columns-split-rate-col');
     }
   }
 }

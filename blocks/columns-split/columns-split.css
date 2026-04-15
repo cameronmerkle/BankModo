@@ -106,8 +106,8 @@
 }
 
 .columns-split-container > .default-content-wrapper h2 {
-  font-size: var(--heading-font-size-xl);
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 400;
   text-align: center;
   max-width: 800px;
   margin-left: auto;
@@ -215,4 +215,69 @@
   object-fit: cover;
   height: 100%;
   border-radius: 0;
+}
+
+/* === Savings card variant === */
+
+/* Bigger section heading */
+.columns-split-savings-heading {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+/* Card container */
+.columns-split-savings {
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 18px 12px rgb(0 0 0 / 8%);
+  background-color: var(--background-color);
+}
+
+.columns-split-savings > div {
+  gap: 0;
+}
+
+/* Left column: blue background with white APY text */
+.columns-split-savings .columns-split-rate-col {
+  background-color: var(--wintrust-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl);
+  text-align: center;
+}
+
+.columns-split-savings .columns-split-rate-col h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Right column: white background with details */
+.columns-split-savings > div > div:not(.columns-split-rate-col) {
+  padding: var(--spacing-xl) var(--spacing-l);
+  background-color: var(--background-color);
+}
+
+/* Green outline button for Open an Account */
+.columns-split-savings a:any-link {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 3px solid var(--accent-color);
+  border-radius: var(--border-radius-button);
+  color: var(--accent-color);
+  background-color: transparent;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: var(--body-font-size-s);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: var(--transition-base);
+}
+
+.columns-split-savings a:any-link:hover {
+  background-color: var(--accent-color);
+  color: #fff;
 }
