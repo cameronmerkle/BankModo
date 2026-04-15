@@ -71,10 +71,14 @@
 }
 
 /* === Bonus-style columns with card shadows === */
+.columns-split-bonus {
+  margin-top: var(--spacing-l);
+}
+
 .columns-split-bonus > div > div:not(.columns-split-or) {
   background-color: var(--background-color);
   box-shadow: var(--shadow-card);
-  padding: var(--spacing-l);
+  padding: var(--spacing-xl) var(--spacing-l);
   border-radius: var(--border-radius-card);
 }
 
