@@ -70,7 +70,7 @@
   border-color: var(--accent-hover-color);
 }
 
-/* === Savings card variant (green outline button) === */
+/* Savings variant green outline button */
 .columns-split.columns-split-savings a.button:any-link {
   border: 3px solid var(--accent-color);
   color: var(--accent-color);
@@ -80,6 +80,17 @@
 .columns-split.columns-split-savings a.button:any-link:hover {
   background-color: var(--accent-color);
   color: #fff;
+}
+
+/* Dark section button variant */
+.dark-blue .columns-split a.button:any-link {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.dark-blue .columns-split a.button:any-link:hover {
+  background-color: rgb(255 255 255 / 15%);
 }
 
 /* === Bonus-style columns with card shadows === */
@@ -112,7 +123,6 @@
   text-align: center;
 }
 
-/* Extra spacing above the button below the bonus cards */
 .columns-split-container > .columns-split-wrapper + .default-content-wrapper {
   margin-top: var(--spacing-xl);
 }
@@ -126,7 +136,6 @@
   margin-right: auto;
 }
 
-/* Green button for "Choose Your Account" */
 .columns-split-container > .default-content-wrapper a {
   display: inline-block;
   padding: 12px 32px;
@@ -157,7 +166,6 @@
   background-color: var(--background-color);
 }
 
-/* Left column: blue background with white APY text */
 .columns-split.columns-split-savings .columns-split-rate-col {
   background-color: var(--wintrust-blue);
   display: flex;
@@ -174,63 +182,27 @@
   margin: 0;
 }
 
-/* === Responsive === */
-@media (width >= 900px) {
-  .columns-split.columns-split-savings > div {
-    gap: 0;
-  }
-
-  /* Right column: white background with details */
-  .columns-split.columns-split-savings > div > div:not(.columns-split-rate-col) {
-    padding: var(--spacing-xl) var(--spacing-l);
-    background-color: var(--background-color);
-  }
-
-  .columns-split > div {
-    align-items: center;
-    flex-direction: row;
-    gap: var(--spacing-xl);
-  }
-
-  .columns-split-bonus > div {
-    gap: var(--spacing-m);
-  }
-
-  .columns-split > div > div {
-    flex: 1;
-    order: unset;
-  }
-
-  .columns-split h2 {
-    font-size: var(--heading-font-size-xxl);
-  }
-
-  .columns-split > div > .columns-split-or {
-    flex: 0 0 40px;
-    font-size: var(--heading-font-size-m);
-  }
-}
-
-/* === Dark section variant === */
+/* === Dark section variant text colors === */
 .dark-blue .columns-split h2,
 .dark-blue .columns-split p,
 .dark-blue .columns-split li {
   color: #fff;
 }
 
-.dark-blue .columns-split a.button:any-link {
-  background-color: transparent;
-  border-color: #fff;
-  color: #fff;
-}
-
-.dark-blue .columns-split a.button:any-link:hover {
-  background-color: rgb(255 255 255 / 15%);
-}
-
-/* Early Pay card layout: text on left with padding, image flush to right edge */
+/* Early Pay card layout */
 .dark-blue .columns-split > div > div:not(.columns-split-img-col) {
   padding: var(--spacing-xl) var(--spacing-l);
+}
+
+.dark-blue .columns-split > div > .columns-split-img-col {
+  padding: 0;
+  line-height: 0;
+}
+
+.dark-blue .columns-split > div > .columns-split-img-col img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 0;
 }
 
 /* Style links in dark section as white outline buttons */
@@ -253,13 +225,38 @@
   background-color: rgb(255 255 255 / 15%);
 }
 
-.dark-blue .columns-split > div > .columns-split-img-col {
-  padding: 0;
-  line-height: 0;
-}
+/* === Responsive === */
+@media (width >= 900px) {
+  .columns-split > div {
+    align-items: center;
+    flex-direction: row;
+    gap: var(--spacing-xl);
+  }
 
-.dark-blue .columns-split > div > .columns-split-img-col img {
-  object-fit: cover;
-  height: 100%;
-  border-radius: 0;
+  .columns-split-bonus > div {
+    gap: var(--spacing-m);
+  }
+
+  .columns-split > div > div {
+    flex: 1;
+    order: unset;
+  }
+
+  .columns-split.columns-split-savings > div {
+    gap: 0;
+  }
+
+  .columns-split.columns-split-savings > div > div:not(.columns-split-rate-col) {
+    padding: var(--spacing-xl) var(--spacing-l);
+    background-color: var(--background-color);
+  }
+
+  .columns-split h2 {
+    font-size: var(--heading-font-size-xxl);
+  }
+
+  .columns-split > div > .columns-split-or {
+    flex: 0 0 40px;
+    font-size: var(--heading-font-size-m);
+  }
 }
