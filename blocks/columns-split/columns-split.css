@@ -180,3 +180,19 @@
 .dark-blue .columns-split a.button:any-link:hover {
   background-color: rgb(255 255 255 / 15%);
 }
+
+/* Early Pay card layout: text on left with padding, image flush to right edge */
+.dark-blue .columns-split > div > div:not(.columns-split-img-col) {
+  padding: var(--spacing-xl) var(--spacing-l);
+}
+
+.dark-blue .columns-split > div > .columns-split-img-col {
+  padding: 0;
+  line-height: 0;
+}
+
+.dark-blue .columns-split > div > .columns-split-img-col img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 0;
+}

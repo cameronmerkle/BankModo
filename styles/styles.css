@@ -352,6 +352,25 @@ main .section.dark-blue.hero-banner-container {
   padding: 0;
 }
 
+/* Early Pay card-style dark section: contained width, rounded corners */
+main .section.dark-blue.columns-split-container {
+  background-color: transparent;
+  padding: var(--spacing-xl) 24px;
+}
+
+main .section.dark-blue.columns-split-container > .columns-split-wrapper {
+  background-color: var(--wintrust-blue-080);
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main .section.dark-blue.columns-split-container > .columns-split-wrapper .columns-split {
+  padding: 0;
+}
+
 main .section.dark-blue h1,
 main .section.dark-blue h2,
 main .section.dark-blue h3,
