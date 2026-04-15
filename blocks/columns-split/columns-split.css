@@ -186,6 +186,26 @@
   padding: var(--spacing-xl) var(--spacing-l);
 }
 
+/* Style links in dark section as white outline buttons */
+.dark-blue .columns-split a:any-link {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 2px solid #fff;
+  border-radius: var(--border-radius-button);
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: var(--body-font-size-s);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: var(--transition-base);
+}
+
+.dark-blue .columns-split a:any-link:hover {
+  background-color: rgb(255 255 255 / 15%);
+}
+
 .dark-blue .columns-split > div > .columns-split-img-col {
   padding: 0;
   line-height: 0;
