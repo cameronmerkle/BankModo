@@ -1,6 +1,6 @@
 footer {
-  background-color: var(--wintrust-blue);
-  color: #fff;
+  background-color: #313131;
+  color: #ebebeb;
   font-size: var(--body-font-size-xs);
 }
 
@@ -12,7 +12,7 @@ footer .footer > div {
 
 footer .footer p {
   margin: 0 0 8px;
-  color: #ccd8e8;
+  color: #ebebeb;
 }
 
 footer .footer a:any-link {
@@ -25,11 +25,16 @@ footer .footer a:any-link:hover {
   text-decoration: underline;
 }
 
+/* Column headings with green underline */
 footer .footer strong {
-  color: #fff;
-  font-size: var(--body-font-size-s);
+  color: #ebebeb;
+  font-family: var(--heading-font-family);
+  font-size: var(--body-font-size-m);
+  font-weight: 500;
   display: block;
-  margin-bottom: 8px;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: 3px solid #1a9b85;
 }
 
 footer .footer ul {
@@ -42,27 +47,24 @@ footer .footer li {
   margin-bottom: 6px;
 }
 
-/* Columns block inside footer for 4-column layout */
+/* Columns block inside footer - align tops */
 footer .footer .columns > div {
-  gap: var(--spacing-xl);
+  align-items: flex-start;
 }
 
-footer .footer .columns > div > div h2 {
-  color: #fff;
-  font-size: var(--body-font-size-m);
-  font-weight: 700;
-  margin: 0 0 8px;
+footer .footer .columns > div > div {
+  vertical-align: top;
 }
 
 /* Copyright section */
 footer .footer > div:last-child {
-  border-top: 1px solid rgba(255 255 255 / 20%);
+  border-top: 1px solid rgb(255 255 255 / 20%);
   padding-top: 20px;
   margin-top: 20px;
 }
 
 footer .footer > div:last-child p {
-  color: #8ea8c8;
+  color: #8a8a8a;
   font-size: 12px;
   text-align: center;
 }
