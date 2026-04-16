@@ -205,9 +205,9 @@
   margin: 0;
 }
 
-/* Center the Statement Savings title */
+/* Statement Savings title */
 .columns-split.columns-split-savings h3 {
-  text-align: center;
+  text-align: left;
   margin-bottom: var(--spacing-m);
 }
 
