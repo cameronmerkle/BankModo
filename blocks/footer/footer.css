@@ -57,7 +57,11 @@ footer .footer .columns > div > div {
   vertical-align: top;
 }
 
-footer .footer .columns p {
+footer .footer .columns > div > div p {
+  text-align: left;
+}
+
+footer .footer .columns > div > div strong {
   text-align: left;
 }
 
