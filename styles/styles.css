@@ -353,9 +353,16 @@ main .section.dark-blue.hero-banner-container {
 }
 
 /* Early Pay card-style dark section: contained width, rounded corners */
+/* Light blue background starts from middle of this section */
 main .section.dark-blue.columns-split-container {
-  background-color: transparent;
+  background: linear-gradient(to bottom, transparent 50%, #e8eff6 50%);
   padding: var(--spacing-xl) 24px;
+}
+
+/* Savings section continues the light blue background */
+main .section.dark-blue.columns-split-container + .section.columns-split-container {
+  background-color: #e8eff6;
+  padding-bottom: var(--spacing-xxl);
 }
 
 main .section.dark-blue.columns-split-container > .columns-split-wrapper {
