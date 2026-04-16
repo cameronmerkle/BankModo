@@ -44,10 +44,15 @@ footer .footer strong {
   font-family: var(--heading-font-family);
   font-size: var(--body-font-size-m);
   font-weight: 500;
-  display: block;
+  display: inline-block;
   padding-bottom: 10px;
   margin-bottom: 12px;
   border-bottom: 3px solid #1a9b85;
+}
+
+/* Left-align column content */
+footer .footer .columns > div > div {
+  text-align: left;
 }
 
 footer .footer ul {
