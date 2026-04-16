@@ -10,6 +10,11 @@ footer .footer > div {
   padding: 40px 24px 24px;
 }
 
+footer .footer p {
+  margin: 0 0 8px;
+  color: #ebebeb;
+}
+
 /* Copyright section */
 footer .footer > div:last-child {
   border-top: 1px solid rgb(255 255 255 / 20%);
@@ -21,11 +26,6 @@ footer .footer > div:last-child p {
   color: #8a8a8a;
   font-size: 12px;
   text-align: center;
-}
-
-footer .footer p {
-  margin: 0 0 8px;
-  color: #ebebeb;
 }
 
 footer .footer a:any-link {
