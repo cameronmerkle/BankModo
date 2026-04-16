@@ -261,7 +261,12 @@
     gap: 0;
   }
 
+  .columns-split.columns-split-savings .columns-split-rate-col {
+    flex: 0 0 33%;
+  }
+
   .columns-split.columns-split-savings > div > div:not(.columns-split-rate-col) {
+    flex: 1;
     padding: var(--spacing-xl) var(--spacing-l);
     background-color: var(--background-color);
   }
