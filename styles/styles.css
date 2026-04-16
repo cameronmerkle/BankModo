@@ -353,15 +353,22 @@ main .section.dark-blue.hero-banner-container {
 }
 
 /* Early Pay card-style dark section: contained width, rounded corners */
+
 /* Light blue background starts from middle of this section */
 main .section.dark-blue.columns-split-container {
   background: linear-gradient(to bottom, transparent 50%, #e8eff6 50%);
   padding: var(--spacing-xl) 24px;
 }
 
-/* Savings section continues the light blue background */
-main .section.dark-blue.columns-split-container + .section.columns-split-container {
+/* Savings section and everything below continues the light blue background */
+main .section.dark-blue.columns-split-container + .section {
   background-color: #e8eff6;
+  margin-top: 0;
+}
+
+main .section.dark-blue.columns-split-container + .section + .section {
+  background-color: #e8eff6;
+  margin-top: 0;
   padding-bottom: var(--spacing-xxl);
 }
 
