@@ -205,6 +205,11 @@
   margin: 0;
 }
 
+/* Add spacing between section heading and savings card */
+.columns-split.columns-split-savings {
+  margin-top: var(--spacing-l);
+}
+
 /* Statement Savings right column content - push inward for balanced look */
 .columns-split.columns-split-savings h3 {
   text-align: left;
