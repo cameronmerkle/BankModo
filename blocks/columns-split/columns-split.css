@@ -151,7 +151,7 @@
   margin-right: auto;
 }
 
-.columns-split-container > .default-content-wrapper a {
+.columns-split-container > .default-content-wrapper a:any-link {
   display: inline-block;
   padding: 12px 32px;
   background-color: var(--accent-color);
@@ -167,7 +167,7 @@
   transition: var(--transition-base);
 }
 
-.columns-split-container > .default-content-wrapper a:hover {
+.columns-split-container > .default-content-wrapper a:any-link:hover {
   background-color: var(--accent-hover-color);
   border-color: var(--accent-hover-color);
   color: #fff;
