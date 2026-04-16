@@ -70,14 +70,29 @@
   border-color: var(--accent-hover-color);
 }
 
-/* Savings variant green outline button */
-.columns-split.columns-split-savings a.button:any-link {
-  border: 3px solid var(--accent-color);
-  color: var(--accent-color);
-  background-color: transparent;
+/* Savings variant: stretch columns to full height */
+.columns-split.columns-split-savings > div {
+  align-items: stretch;
 }
 
-.columns-split.columns-split-savings a.button:any-link:hover {
+/* Savings variant green outline button (link has no .button class) */
+.columns-split.columns-split-savings a:any-link {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 3px solid var(--accent-color);
+  border-radius: var(--border-radius-button);
+  color: var(--accent-color);
+  background-color: transparent;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: var(--body-font-size-s);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: var(--transition-base);
+}
+
+.columns-split.columns-split-savings a:any-link:hover {
   background-color: var(--accent-color);
   color: #fff;
 }
