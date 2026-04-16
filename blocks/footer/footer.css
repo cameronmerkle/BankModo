@@ -15,19 +15,6 @@ footer .footer p {
   color: #ebebeb;
 }
 
-/* Copyright section */
-footer .footer > div:last-child {
-  border-top: 1px solid rgb(255 255 255 / 20%);
-  padding-top: 20px;
-  margin-top: 20px;
-}
-
-footer .footer > div:last-child p {
-  color: #8a8a8a;
-  font-size: 12px;
-  text-align: center;
-}
-
 footer .footer a:any-link {
   color: #fff;
   text-decoration: none;
@@ -50,11 +37,6 @@ footer .footer strong {
   border-bottom: 3px solid #1a9b85;
 }
 
-/* Left-align column content */
-footer .footer .columns > div > div {
-  text-align: left;
-}
-
 footer .footer ul {
   list-style: none;
   padding: 0;
@@ -65,13 +47,27 @@ footer .footer li {
   margin-bottom: 6px;
 }
 
-/* Columns block inside footer - align tops */
+/* Columns block inside footer - align tops and left-align */
 footer .footer .columns > div {
   align-items: flex-start;
 }
 
 footer .footer .columns > div > div {
+  text-align: left;
   vertical-align: top;
+}
+
+/* Copyright section */
+footer .footer > div:last-child {
+  border-top: 1px solid rgb(255 255 255 / 20%);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+footer .footer > div:last-child p {
+  color: #8a8a8a;
+  font-size: 12px;
+  text-align: center;
 }
 
 @media (width >= 900px) {
