@@ -70,7 +70,7 @@
   --border-radius-card: 0;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 80px;
 }
 
 @media (width >= 900px) {
