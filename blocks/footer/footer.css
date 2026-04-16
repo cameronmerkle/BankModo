@@ -57,6 +57,10 @@ footer .footer .columns > div > div {
   vertical-align: top;
 }
 
+footer .footer .columns p {
+  text-align: left;
+}
+
 /* stylelint-disable-next-line no-descending-specificity -- targets different context than .columns > div */
 footer .footer > div:last-child {
   border-top: 1px solid rgb(255 255 255 / 20%);
