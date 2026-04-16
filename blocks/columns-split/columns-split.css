@@ -205,10 +205,14 @@
   margin: 0;
 }
 
-/* Statement Savings title */
+/* Statement Savings right column content - push inward for balanced look */
 .columns-split.columns-split-savings h3 {
   text-align: left;
   margin-bottom: var(--spacing-m);
+}
+
+.columns-split.columns-split-savings > div > div:not(.columns-split-rate-col) {
+  padding-left: var(--spacing-xxl);
 }
 
 /* === Early Pay card layout === */
