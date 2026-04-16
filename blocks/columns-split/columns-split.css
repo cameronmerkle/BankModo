@@ -70,6 +70,17 @@
   border-color: var(--accent-hover-color);
 }
 
+/* Dark section button variant */
+.dark-blue .columns-split a.button:any-link {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.dark-blue .columns-split a.button:any-link:hover {
+  background-color: rgb(255 255 255 / 15%);
+}
+
 /* Savings variant: stretch columns to full height */
 .columns-split.columns-split-savings > div {
   align-items: stretch;
@@ -95,17 +106,6 @@
 .columns-split.columns-split-savings a:any-link:hover {
   background-color: var(--accent-color);
   color: #fff;
-}
-
-/* Dark section button variant */
-.dark-blue .columns-split a.button:any-link {
-  background-color: transparent;
-  border-color: #fff;
-  color: #fff;
-}
-
-.dark-blue .columns-split a.button:any-link:hover {
-  background-color: rgb(255 255 255 / 15%);
 }
 
 /* === Bonus-style columns with card shadows === */
@@ -173,6 +173,13 @@
   color: #fff;
 }
 
+/* === Dark section variant text colors === */
+.dark-blue .columns-split h2,
+.dark-blue .columns-split p,
+.dark-blue .columns-split li {
+  color: #fff;
+}
+
 /* === Savings card container === */
 .columns-split.columns-split-savings {
   border-radius: 25px;
@@ -197,14 +204,7 @@
   margin: 0;
 }
 
-/* === Dark section variant text colors === */
-.dark-blue .columns-split h2,
-.dark-blue .columns-split p,
-.dark-blue .columns-split li {
-  color: #fff;
-}
-
-/* Early Pay card layout */
+/* === Early Pay card layout === */
 .dark-blue .columns-split > div > div:not(.columns-split-img-col) {
   padding: var(--spacing-xl) var(--spacing-l);
 }
