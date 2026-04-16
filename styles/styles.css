@@ -363,12 +363,12 @@ main .section.dark-blue.columns-split-container {
 /* Savings section and everything below continues the light blue background */
 main .section.dark-blue.columns-split-container + .section {
   background-color: #e8eff6;
-  margin-top: 0;
+  margin: 0;
 }
 
 main .section.dark-blue.columns-split-container + .section + .section {
   background-color: #e8eff6;
-  margin-top: 0;
+  margin: 0;
   padding-bottom: var(--spacing-xxl);
 }
 
