@@ -10,6 +10,19 @@ footer .footer > div {
   padding: 40px 24px 24px;
 }
 
+/* Copyright section */
+footer .footer > div:last-child {
+  border-top: 1px solid rgb(255 255 255 / 20%);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+footer .footer > div:last-child p {
+  color: #8a8a8a;
+  font-size: 12px;
+  text-align: center;
+}
+
 footer .footer p {
   margin: 0 0 8px;
   color: #ebebeb;
@@ -54,19 +67,6 @@ footer .footer .columns > div {
 
 footer .footer .columns > div > div {
   vertical-align: top;
-}
-
-/* Copyright section */
-footer .footer > div:last-child {
-  border-top: 1px solid rgb(255 255 255 / 20%);
-  padding-top: 20px;
-  margin-top: 20px;
-}
-
-footer .footer > div:last-child p {
-  color: #8a8a8a;
-  font-size: 12px;
-  text-align: center;
 }
 
 @media (width >= 900px) {
