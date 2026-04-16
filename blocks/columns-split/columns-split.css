@@ -204,6 +204,12 @@
   margin: 0;
 }
 
+/* Center the Statement Savings title */
+.columns-split.columns-split-savings h3 {
+  text-align: center;
+  margin-bottom: var(--spacing-m);
+}
+
 /* === Early Pay card layout === */
 .dark-blue .columns-split > div > div:not(.columns-split-img-col) {
   padding: var(--spacing-xl) var(--spacing-l);
