@@ -187,6 +187,7 @@
   overflow: hidden;
   box-shadow: 0 18px 12px rgb(0 0 0 / 8%);
   background-color: var(--background-color);
+  margin-top: var(--spacing-l);
 }
 
 .columns-split.columns-split-savings .columns-split-rate-col {
@@ -203,11 +204,6 @@
   font-size: 48px;
   font-weight: 400;
   margin: 0;
-}
-
-/* Add spacing between section heading and savings card */
-.columns-split.columns-split-savings {
-  margin-top: var(--spacing-l);
 }
 
 /* Statement Savings right column content - push inward for balanced look */
