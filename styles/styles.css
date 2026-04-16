@@ -397,6 +397,18 @@ main .section.dark-blue a.button:any-link:hover {
   background-color: rgb(255 255 255 / 15%);
 }
 
+/* Disclaimer/disclosure section - last section with no block containers */
+main > .section:last-of-type:not([class*="container"]) p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+main > .section:last-of-type:not([class*="container"]) strong {
+  color: var(--wintrust-blue);
+}
+
 /* lists */
 ul,
 ol {
