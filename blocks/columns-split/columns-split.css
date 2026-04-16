@@ -151,6 +151,7 @@
   margin-right: auto;
 }
 
+/* stylelint-disable-next-line no-descending-specificity -- targets different context than savings a:any-link */
 .columns-split-container > .default-content-wrapper a:any-link {
   display: inline-block;
   padding: 12px 32px;
