@@ -271,7 +271,7 @@ header nav .nav-tools {
   grid-area: tools;
 }
 
-header nav .nav-tools ul {
+header nav .nav-tools .default-content-wrapper ul {
   list-style: none;
   padding: 0;
   margin: 0;
