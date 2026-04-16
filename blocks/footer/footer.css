@@ -72,6 +72,7 @@ footer .footer > div:last-child {
   margin-top: 20px;
 }
 
+/* stylelint-disable-next-line no-descending-specificity -- copyright p vs columns p */
 footer .footer > div:last-child p {
   color: #8a8a8a;
   font-size: 12px;
