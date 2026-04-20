@@ -3,12 +3,14 @@
 /* Section heading: "Choose Your Checking Account" - centered and larger */
 .cards-checking-container .default-content-wrapper {
   text-align: center;
-  margin-bottom: var(--spacing-l);
+  margin-bottom: 32px;
 }
 
 .cards-checking-container .default-content-wrapper h2 {
-  font-size: var(--heading-font-size-xxl);
-  font-weight: 600;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
   text-align: center;
 }
 
@@ -24,61 +26,70 @@
 
 /* Individual cards with blue top tab */
 .cards-checking > ul > li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   background-color: var(--background-color);
-  box-shadow: var(--shadow-card);
-  border-radius: var(--border-radius-card);
-  border-top: 5px solid var(--wintrust-blue);
+  box-shadow: 0 14px 28px rgb(13 65 126 / 9%);
+  border-radius: 8px;
   overflow: hidden;
-  transition: var(--transition-base);
+  transition: box-shadow 0.2s ease;
 }
 
 .cards-checking > ul > li:hover {
-  box-shadow: var(--shadow-card-hover);
+  box-shadow: 0 20px 34px rgb(13 65 126 / 13%);
 }
 
-/* Card header badge (blue background label) */
-.cards-checking .cards-checking-card-image {
-  line-height: 0;
+/* Top blue tab bar */
+.cards-checking > ul > li > .cards-checking-card-body:first-child {
   background-color: var(--wintrust-blue);
-  padding: 8px 16px;
-  min-height: 8px;
+  color: #fff;
+  padding: 14px 24px;
+  font-family: var(--heading-font-family);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.cards-checking .cards-checking-card-image p {
-  color: #fff;
-  font-family: var(--heading-font-family);
-  font-weight: 600;
-  font-size: var(--body-font-size-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+.cards-checking > ul > li > .cards-checking-card-body:first-child p {
   margin: 0;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 /* Card body content */
-.cards-checking .cards-checking-card-body {
-  padding: 20px 24px 28px;
+.cards-checking > ul > li > .cards-checking-card-body:last-child {
+  flex: 1;
+  padding: 24px 24px 28px;
+  background-color: var(--background-color);
 }
 
 .cards-checking .cards-checking-card-body h3 {
   font-family: var(--heading-font-family);
-  font-size: var(--heading-font-size-l);
-  font-weight: 600;
+  font-size: 34px;
+  font-weight: 500;
   color: var(--text-color);
-  margin: 0 0 8px;
+  margin: 0 0 12px;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
 }
 
 .cards-checking .cards-checking-card-body > p:first-of-type {
-  color: #555;
-  font-size: var(--body-font-size-s);
-  margin-bottom: 16px;
+  color: #4d5661;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 18px;
 }
 
 /* Italic interest rate disclaimer text - smaller */
 .cards-checking .cards-checking-card-body p em {
-  font-size: var(--body-font-size-xs);
-  color: #666;
+  font-size: 14px;
+  color: #6d7680;
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .cards-checking .cards-checking-card-body p strong {
@@ -88,8 +99,9 @@
 
 /* Collapsible Product Features */
 .cards-checking .cards-checking-card-body details {
-  margin-bottom: 16px;
-  border-bottom: 1px solid #e0e0e0;
+  margin: 18px 0 16px;
+  border-top: 1px solid #d7e0ea;
+  border-bottom: 1px solid #d7e0ea;
 }
 
 .cards-checking .cards-checking-card-body details summary {
@@ -97,23 +109,24 @@
   color: var(--wintrust-blue);
   font-family: var(--heading-font-family);
   font-weight: 700;
-  font-size: var(--body-font-size-s);
-  padding: 8px 0;
+  font-size: 17px;
+  padding: 14px 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  letter-spacing: 0.01em;
 }
 
 .cards-checking .cards-checking-card-body details summary::after {
-  content: "\25BC";
+  content: '+';
   font-size: 12px;
   color: var(--wintrust-blue);
   transition: transform 0.2s ease;
 }
 
 .cards-checking .cards-checking-card-body details[open] summary::after {
-  transform: rotate(180deg);
+  content: '\2212';
 }
 
 .cards-checking .cards-checking-card-body details summary::-webkit-details-marker {
@@ -122,40 +135,42 @@
 
 .cards-checking .cards-checking-card-body ul {
   padding-left: 1.2em;
-  margin: 8px 0 16px;
+  margin: 12px 0 18px;
 }
 
 .cards-checking .cards-checking-card-body ul > li {
-  font-size: var(--body-font-size-xs);
-  margin-bottom: 6px;
-  line-height: 1.4;
+  font-size: 15px;
+  margin-bottom: 8px;
+  line-height: 1.55;
+  color: #1c232b;
 }
 
 /* Promo code disclaimer text under button */
 .cards-checking .cards-checking-card-body > p:last-child em {
   font-size: 12px;
-  color: #888;
+  color: #7b818a;
   text-align: center;
   display: block;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 /* Card CTA button */
 .cards-checking .cards-checking-card-body a:any-link {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 14px 24px;
   background-color: var(--accent-color);
   color: #fff;
   border: 2px solid var(--accent-color);
-  border-radius: var(--border-radius-button);
+  border-radius: 4px;
   font-family: var(--heading-font-family);
   font-weight: 700;
-  font-size: var(--body-font-size-s);
+  font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   width: 100%;
   box-sizing: border-box;
+  letter-spacing: 0.04em;
   transition: var(--transition-base);
 }
 
@@ -173,5 +188,10 @@
 @media (width >= 900px) {
   .cards-checking > ul {
     grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .cards-checking .cards-checking-card-body h3 {
+    font-size: 38px;
   }
 }

@@ -2,6 +2,11 @@ footer {
   background-color: #313131;
   color: #ebebeb;
   font-size: var(--body-font-size-xs);
+  margin-top: 0;
+}
+
+footer .footer {
+  margin-top: 0;
 }
 
 footer .footer > div {
@@ -69,7 +74,7 @@ footer .footer .columns > div > div strong {
 footer .footer > div:last-child {
   border-top: 1px solid rgb(255 255 255 / 20%);
   padding-top: 20px;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 /* stylelint-disable-next-line no-descending-specificity -- copyright p vs columns p */
